@@ -1,0 +1,44 @@
+.sobre {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+}
+
+.sobre__area {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sobre__area__img {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 50px;
+  height: 500px;
+}
+
+.sobre__img {
+  width: 40%;
+  border-radius: 50px;
+}
+
+.sobre__area__txt {
+  width: 40%;
+}
+
+.sobreMim__titulo {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.sobreMim__descricao {
+  font-weight: 300;
+  font-size: 1.2em;
+  width: 100%;
+}

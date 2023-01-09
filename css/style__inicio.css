@@ -1,0 +1,100 @@
+.all {
+  background-color: var(--preto);
+  color: var(--branco);
+  font-family: "montserrat";
+}
+
+.cabecalho {
+  position: fixed;
+  width: 100vw;
+}
+
+.cabecalho__fixo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.cabecalho__fixo.ativo {
+  background-color: rgb(0, 0, 0);
+}
+
+.cabecalho__menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cabecalho__menu-itens {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cabecalho__menu-itens:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  scale: 1.2;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.inicio__vd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  object-fit: cover;
+}
+
+.inicio__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-left: 6rem;
+  z-index: -1;
+}
+
+.nome {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.funcao {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  border-right: 2px solid #000;
+  overflow: hidden;
+  padding-right: 5px;
+  max-width: 0;
+  white-space: nowrap;
+  animation: pisca normal 0.5s infinite 0.8s,
+    digitar 5s normal 1s steps(55) both;
+}
+
+@keyframes digitar {
+  100% {
+    max-width: 100%;
+  }
+}
+
+@keyframes pisca {
+  100% {
+    border-color: var(--branco);
+  }
+  0% {
+    border-color: transparent;
+  }
+}
