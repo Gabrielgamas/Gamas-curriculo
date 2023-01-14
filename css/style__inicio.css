@@ -5,11 +5,8 @@
 }
 
 .logo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
   display: flex;
-  width: 15%;
+  width: 9rem;
   justify-content: center;
   align-items: center;
 }
@@ -34,11 +31,12 @@
 .cabecalho {
   position: fixed;
   width: 100vw;
+  z-index: 1000;
 }
 
 .cabecalho__fixo {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
@@ -48,7 +46,7 @@
 }
 
 .cabecalho__menu {
-  width: 50%;
+  width: 85%;
   display: flex;
   justify-content: space-around;
 }
@@ -86,7 +84,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-left: 6rem;
   z-index: -1;
 }
 
@@ -105,10 +102,14 @@
   border-right: 2px solid #000;
   overflow: hidden;
   padding-right: 5px;
-  max-width: 0;
+  max-width: 0%;
   white-space: nowrap;
   animation: pisca normal 0.5s infinite 0.8s,
-    digitar 5s normal 1s steps(55) both;
+    digitar 2s normal 1s steps(23) both;
+}
+
+.cabecalho__area__img {
+  display: none;
 }
 
 @keyframes digitar {
@@ -123,5 +124,69 @@
   }
   0% {
     border-color: transparent;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .cabecalho__fixo {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .funcao {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .cabecalho__area__img {
+    display: flex;
+    width: 40x;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cabecalho__menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 6rem;
+    left: 0;
+    top: -110px;
+    align-items: center;
+    background-color: black;
+    padding: 1rem 0;
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .cabecalho__fixo {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 0;
+    width: 8.5rem;
+  }
+
+  .mostrarMenu {
+    top: 60px;
+    opacity: 1;
+  }
+
+  .funcao {
+    font-size: 1rem;
+  }
+
+  .nome {
+    font-size: 3.5rem;
   }
 }

@@ -13,26 +13,32 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 6rem;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .competencias__titulo {
   font-weight: 700;
-  font-size: 3.5rem;
+  width: 100%;
+  font-size: 3em;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  box-sizing: border-box;
+  word-break: break-all;
 }
 
 .competencias__descricao {
   font-size: 1.2em;
   font-weight: 300;
-  z-index: 55;
+  box-sizing: border-box;
 }
 
 .competencias__imgs {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 60vw;
+  width: 100vw;
+  flex-wrap: wrap;
 }
 
 .competencias__area__icones {
@@ -40,6 +46,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 1rem;
 }
 
 .competencias__icones {
@@ -73,6 +80,7 @@
 
 .competencias__area__carregando:before {
   width: 100%;
+  z-index: 2;
   height: 100%;
   background: linear-gradient(90deg, #ffffff 0%, #151515 50%);
   animation: spinner 1s infinite linear;
@@ -90,13 +98,14 @@
   background-color: #151515;
   top: 50%;
   left: 50%;
+  z-index: 3;
   transform: translate(-50%, -50%);
 }
 
 .competencias__icones {
   width: 100px;
   height: 100px;
-  z-index: 55;
+  z-index: 4;
 }
 
 .carregando {
@@ -121,5 +130,11 @@
 @keyframes digitar-1 {
   100% {
     max-width: 110%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .competencias__titulo {
+    font-size: 2rem;
   }
 }
