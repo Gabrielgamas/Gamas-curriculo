@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/style__inicio.css" />
     <link rel="stylesheet" href="./css/style__sobre.css" />
     <link rel="stylesheet" href="./css/style__competencias.css" />
+    <link rel="stylesheet" href="./css/style__contato.css" />
     <title>Site Curriculo</title>
   </head>
   <body class="all">
@@ -25,17 +26,21 @@
           <div class="logo__txt">Gabriel Almeida</div>
         </div>
         <ul class="cabecalho__menu">
-          <li class="cabecalho__menu-itens"><a href="#">Inicio</a></li>
-          <li class="cabecalho__menu-itens"><a href="#">Sobre</a></li>
-          <li class="cabecalho__menu-itens"><a href="#">Portfólio</a></li>
-          <li class="cabecalho__menu-itens"><a href="#">Contatos</a></li>
+          <li class="cabecalho__menu-itens"><a href="#inicio">Inicio</a></li>
+          <li class="cabecalho__menu-itens"><a href="#sobre">Sobre</a></li>
+          <li class="cabecalho__menu-itens">
+            <a href="#competencias">Competencias</a>
+          </li>
+          <li class="cabecalho__menu-itens">
+            <a href="#contatos">Contatos</a>
+          </li>
         </ul>
         <div class="cabecalho__area__img">
           <img src="./imagem/menu-aberto.png" alt="" class="cabecalho__img" />
         </div>
       </nav>
     </header>
-    <div class="inicio">
+    <section id="inicio" class="inicio">
       <video
         class="inicio__vd"
         src="./video/bg__video.mp4"
@@ -52,8 +57,8 @@
           <p class="funcao">Desenvolvedor Front-end</p>
         </div>
       </div>
-    </div>
-    <section class="sobre">
+    </section>
+    <section id="sobre" class="sobre">
       <div class="sobre__area">
         <img class="sobre__img" src="./imagem/image2.png" alt="" />
         <div class="sobre__area__txt">
@@ -79,7 +84,7 @@
         </div>
       </div>
     </section>
-    <section class="competencias">
+    <section id="competencias" class="competencias">
       <div class="competencias__txt">
         <h2 class="competencias__titulo">Competencias</h2>
         <p class="competencias__descricao">
@@ -140,6 +145,40 @@
           </div>
         </div>
       </div>
+    </section>
+    <section id="contatos" class="contato">
+      <h2 class="contato__titulo">Entre em contato comigo</h2>
+      <form
+        class="contato__formulario"
+        action="https://formsubmit.co/gamas.enge@hotmail.com"
+        method="POST"
+      >
+        <label class="formulario__titulo__info" for="name">Nome</label>
+        <input
+          class="formulario__nome"
+          type="text"
+          name="name"
+          required
+          placeholder="Nome"
+        />
+        <label class="formulario__titulo__info" for="email">E-mail</label>
+        <input
+          class="formulario__email"
+          type="email"
+          name="email"
+          required
+          placeholder="E-mail"
+        />
+        <label class="formulario__titulo__info" for="message">Mensagem</label>
+        <textarea
+          class="formulario__txt"
+          name="message"
+          placeholder="Escreva aqui..."
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button class="formulario__botao" type="submit">Enviar</button>
+      </form>
     </section>
   </body>
   <script src="./JavaScript/script.js"></script>

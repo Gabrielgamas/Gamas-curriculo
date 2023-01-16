@@ -49,6 +49,7 @@
   width: 85%;
   display: flex;
   justify-content: space-around;
+  box-sizing: border-box;
 }
 
 .cabecalho__menu-itens {
@@ -64,8 +65,8 @@
 
 .inicio {
   display: flex;
-  flex-direction: column;
   height: 100vh;
+  flex-direction: column;
   justify-content: center;
   overflow: hidden;
 }
@@ -128,6 +129,10 @@
 }
 
 @media screen and (max-width: 786px) {
+  .inicio {
+    padding: 6rem 0;
+  }
+
   .cabecalho__fixo {
     flex-direction: column;
   }
@@ -157,7 +162,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100vw;
-    height: 6rem;
+    height: 8rem;
     left: 0;
     top: -110px;
     align-items: center;
@@ -165,6 +170,14 @@
     padding: 1rem 0;
     opacity: 0;
     transition: 1s;
+  }
+  .cabecalho__menu-itens:hover {
+    scale: 1;
+    text-shadow: none;
+  }
+
+  .cabecalho__menu-itens {
+    margin-bottom: 0.5rem;
   }
 
   .cabecalho__fixo {

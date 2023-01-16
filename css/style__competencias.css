@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6rem 0;
+  padding: 9rem 0;
 }
 
 .competencias__txt {
@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100vw;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -136,5 +136,9 @@
 @media screen and (max-width: 468px) {
   .competencias__titulo {
     font-size: 2rem;
+  }
+
+  .competencias__txt {
+    padding-bottom: 4rem;
   }
 }
