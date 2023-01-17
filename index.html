@@ -16,13 +16,15 @@
     <link rel="stylesheet" href="./css/style__sobre.css" />
     <link rel="stylesheet" href="./css/style__competencias.css" />
     <link rel="stylesheet" href="./css/style__contato.css" />
+    <link rel="stylesheet" href="./css/style__rodape.css" />
+    <link rel="stylesheet" href="./css/style__botao.css" />
     <title>Site Curriculo</title>
   </head>
   <body class="all">
     <header class="cabecalho">
       <nav class="cabecalho__fixo">
         <div class="logo">
-          <div class="logo__img">&lt;/&gt;</div>
+          <img src="./imagem/image1.png" alt="" class="logo__img" />
           <div class="logo__txt">Gabriel Almeida</div>
         </div>
         <ul class="cabecalho__menu">
@@ -56,6 +58,27 @@
         <div class="espaco-funcao">
           <p class="funcao">Desenvolvedor Front-end</p>
         </div>
+      </div>
+      <div class="inicio__botoes">
+        <a class="inicio__botao__area" href="https://github.com/Gabrielgamas">
+          <span></span><span></span><span></span><span></span>
+          <img
+            class="inicio__botao__icone"
+            src="./imagem/github.png"
+            alt=""
+          />GitHub
+        </a>
+        <a
+          class="inicio__botao__area"
+          href="https://www.linkedin.com/in/gabriel-almeida-gamas/"
+        >
+          <span></span><span></span><span></span><span></span>
+          <img
+            class="inicio__botao__icone"
+            src="./imagem/linkedin.png"
+            alt=""
+          />Linkedin
+        </a>
       </div>
     </section>
     <section id="sobre" class="sobre">
@@ -147,38 +170,63 @@
       </div>
     </section>
     <section id="contatos" class="contato">
-      <h2 class="contato__titulo">Entre em contato comigo</h2>
-      <form
-        class="contato__formulario"
-        action="https://formsubmit.co/gamas.enge@hotmail.com"
-        method="POST"
-      >
-        <label class="formulario__titulo__info" for="name">Nome</label>
-        <input
-          class="formulario__nome"
-          type="text"
-          name="name"
-          required
-          placeholder="Nome"
-        />
-        <label class="formulario__titulo__info" for="email">E-mail</label>
-        <input
-          class="formulario__email"
-          type="email"
-          name="email"
-          required
-          placeholder="E-mail"
-        />
-        <label class="formulario__titulo__info" for="message">Mensagem</label>
-        <textarea
-          class="formulario__txt"
-          name="message"
-          placeholder="Escreva aqui..."
-          cols="30"
-          rows="10"
-        ></textarea>
-        <button class="formulario__botao" type="submit">Enviar</button>
-      </form>
+      <div class="contato__area-1">
+        <h2 class="contato__titulo">Entre em contato comigo</h2>
+        <form
+          class="contato__formulario"
+          action="https://formsubmit.co/gamas.enge@hotmail.com"
+          method="POST"
+        >
+          <label class="formulario__titulo__info" for="name">Nome</label>
+          <input
+            class="formulario__nome"
+            type="text"
+            name="name"
+            required
+            placeholder="Nome"
+          />
+          <label class="formulario__titulo__info" for="email">E-mail</label>
+          <input
+            class="formulario__email"
+            type="email"
+            name="email"
+            required
+            placeholder="E-mail"
+          />
+          <label class="formulario__titulo__info" for="message">Mensagem</label>
+          <textarea
+            class="formulario__txt"
+            name="message"
+            placeholder="Escreva aqui..."
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button class="formulario__botao" type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="contato__area-2">
+        <h3 class="contato__titulo-2">Outras formas de contato</h3>
+        <ol class="contato__lista">
+          <li class="contato__lista-itens">Tel: (75) 99176-7294</li>
+          <li class="contato__lista-itens">E-mail: gamas.enge@hotmail.com</li>
+          <li class="contato__lista-itens">
+            GitHub:
+            <a
+              class="contato__lista-clicavel"
+              href="https://github.com/Gabrielgamas"
+              >Gabrielgamas</a
+            >
+          </li>
+          <li class="contato__lista-itens">
+            Linkedin:
+            <a
+              class="contato__lista-clicavel"
+              href="https://www.linkedin.com/in/gabriel-almeida-gamas/"
+              >gabriel-almeida-gamas</a
+            >
+          </li>
+        </ol>
+      </div>
     </section>
   </body>
   <script src="./JavaScript/script.js"></script>

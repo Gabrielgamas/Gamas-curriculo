@@ -1,15 +1,16 @@
 .contato {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 6.9rem 0;
 }
 
 .contato__titulo {
+  width: 80%;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: white;
   text-transform: uppercase;
@@ -20,22 +21,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 
 .formulario__titulo__info {
   font-weight: 400;
   font-size: 1.5rem;
-  text-align: start;
-  width: 40%;
+  text-align: center;
+  width: 80%;
 }
 
 .formulario__nome,
 .formulario__email,
 .formulario__txt {
   margin: 1rem 0;
-  width: 40%;
+  width: 80%;
   border-radius: 10px;
   border: 1px solid transparent;
   padding: 1rem;
@@ -68,7 +69,7 @@
 }
 
 .formulario__botao {
-  width: 43%;
+  width: 87.5%;
   outline: none;
   background-color: rgba(255, 255, 255, 0.5);
   color: white;
@@ -84,11 +85,51 @@
   background-color: rgba(255, 255, 255, 0.7);
 }
 
+.contato__area-1,
+.contato__area-2 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contato__area-2 {
+  background-color: #141414;
+  padding: 2rem 0 3rem 0;
+  border-radius: 20px;
+}
+
+.contato__titulo-2 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.contato__lista-itens {
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contato__lista-clicavel:hover {
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+.contato__lista {
+  width: 100%;
+}
+
 @media screen and (max-width: 786px) {
   .formulario__nome,
   .formulario__email,
   .formulario__txt {
-    width: 60%;
+    width: 80%;
   }
 
   .formulario__titulo__info {
@@ -105,6 +146,24 @@
 
   .contato {
     padding: 6rem 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contato__area-1,
+  .contato__area-2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+  }
+
+  .contato__area-2 {
+    margin: 1.5rem 0;
+  }
+
+  .contato__formulario {
+    align-items: center;
   }
 }
 
