@@ -164,6 +164,10 @@
 }
 
 @media screen and (max-width: 468px) {
+  .inicio {
+    padding: 2rem;
+  }
+
   .cabecalho__area__img {
     display: flex;
     width: 40x;
