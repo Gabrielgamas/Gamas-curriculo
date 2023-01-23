@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="./css/style__contato.css" />
     <link rel="stylesheet" href="./css/style__rodape.css" />
     <link rel="stylesheet" href="./css/style__botao.css" />
-    <title>Site Curriculo</title>
+    <link rel="stylesheet" href="./css/style__animacaoScroll.css" />
+    <title>Gabriel Almeida</title>
   </head>
   <body class="all">
     <header class="cabecalho">
@@ -60,7 +61,11 @@
         </div>
       </div>
       <div class="inicio__botoes">
-        <a class="inicio__botao__area" href="https://github.com/Gabrielgamas">
+        <a
+          data-anime="escala"
+          class="inicio__botao__area"
+          href="https://github.com/Gabrielgamas"
+        >
           <span></span><span></span><span></span><span></span>
           <img
             class="inicio__botao__icone"
@@ -69,6 +74,7 @@
           />GitHub
         </a>
         <a
+          data-anime="escala"
           class="inicio__botao__area"
           href="https://www.linkedin.com/in/gabriel-almeida-gamas/"
         >
@@ -83,8 +89,13 @@
     </section>
     <section id="sobre" class="sobre">
       <div class="sobre__area">
-        <img class="sobre__img" src="./imagem/image2.png" alt="" />
-        <div class="sobre__area__txt">
+        <img
+          class="sobre__img"
+          src="./imagem/image2.png"
+          alt=""
+          data-anime="esquerda"
+        />
+        <div class="sobre__area__txt" data-anime="direita">
           <h2 class="sobreMim__titulo">Um pouco sobre mim</h2>
           <p class="sobreMim__descricao">
             Olá, me chamo Gabriel Almeida de Moura Alves e vou contar um pouco
@@ -108,14 +119,14 @@
       </div>
     </section>
     <section id="competencias" class="competencias">
-      <div class="competencias__txt">
+      <div class="competencias__txt" data-anime="escala">
         <h2 class="competencias__titulo">Competencias</h2>
         <p class="competencias__descricao">
           Aqui está todas as tecnologias que aprendi e estou aprendendo.
         </p>
       </div>
       <div class="competencias__imgs">
-        <div class="competencias__area__icones">
+        <div class="competencias__area__icones" data-anime="escala">
           <div class="competencias__area__completo">
             <img
               src="./imagem/html.png"
@@ -125,7 +136,7 @@
           </div>
           <p class="competencias__icones__descricao">Completo</p>
         </div>
-        <div class="competencias__area__icones">
+        <div class="competencias__area__icones" data-anime="escala">
           <div class="competencias__area__completo">
             <img
               src="./imagem/css.png"
@@ -135,7 +146,7 @@
           </div>
           <p class="competencias__icones__descricao">Completo</p>
         </div>
-        <div class="competencias__area__icones">
+        <div class="competencias__area__icones" data-anime="escala">
           <div class="competencias__area__carregando">
             <img
               src="./imagem/js.png"
@@ -143,7 +154,7 @@
               class="competencias__icones"
             />
           </div>
-          <div class="area__txt__descricao">
+          <div class="area__txt__descricao" data-anime="escala">
             <div class="area__txt__central">
               <p class="competencias__icones__descricao carregando">
                 Carregando . . .
@@ -151,7 +162,7 @@
             </div>
           </div>
         </div>
-        <div class="competencias__area__icones">
+        <div class="competencias__area__icones" data-anime="escala">
           <div class="competencias__area__carregando">
             <img
               src="./imagem/react.png"
@@ -159,7 +170,7 @@
               class="competencias__icones"
             />
           </div>
-          <div class="area__txt__descricao">
+          <div class="area__txt__descricao" data-anime="escala">
             <div class="area__txt__central">
               <p class="competencias__icones__descricao carregando">
                 Carregando . . .
@@ -170,7 +181,7 @@
       </div>
     </section>
     <section id="contatos" class="contato">
-      <div class="contato__area-1">
+      <div class="contato__area-1" data-anime="esquerda">
         <h2 class="contato__titulo">Entre em contato comigo</h2>
         <form
           class="contato__formulario"
@@ -204,7 +215,7 @@
           <button class="formulario__botao" type="submit">Enviar</button>
         </form>
       </div>
-      <div class="contato__area-2">
+      <div class="contato__area-2" data-anime="direita">
         <h3 class="contato__titulo-2">Outras formas de contato</h3>
         <ol class="contato__lista">
           <li class="contato__lista-itens">Tel: (75) 99176-7294</li>
@@ -232,4 +243,5 @@
   <script src="./JavaScript/script.js"></script>
   <script src="./JavaScript/mostrarMenu.js"></script>
   <script src=".//JavaScript/enviarComEnter.js"></script>
+  <script src="./JavaScript/animacaoScroll.js"></script>
 </html>
